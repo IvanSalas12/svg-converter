@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Configured to fix native modules like @neplex/vectorizer
+  serverExternalPackages: ['@neplex/vectorizer'],
 };
 
 export default nextConfig;
